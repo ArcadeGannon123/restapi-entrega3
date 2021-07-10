@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
 
     if (id_sesion && id_maquina) {
         reservas.push(nuevaReserva);
-        res.json(reservas);
+        res.json({res: 'ok'});
 
     } else {
         res.status(500).json({error: 'There was an error.'});
@@ -34,7 +34,7 @@ router.delete('/:id_sesion', (req, res) => {
                 reservas.splice(i, 1);
             }
         });
-        res.json(reservas);
+        res.json({res: 'ok'});
     }
 
 });
