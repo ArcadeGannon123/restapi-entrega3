@@ -34,7 +34,7 @@ router.delete('/:id_sesion', (req, res) => {
                 reservas.splice(i, 1);
             }
         });
-        res.json({res: 'ok'});
+        res.json(reservas);
     }
 
 });
