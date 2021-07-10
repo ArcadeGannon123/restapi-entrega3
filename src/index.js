@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(require('./routes'));
 app.use('/api/reservas', require('./routes/reservas'));
 app.use('/api/maquinas', require('./routes/maquinas'));
-app.use('/api/tipomaquinas', require('./routes/tipomaquinas'));
+app.use('/api/tipo-maquinas', require('./routes/tipo-maquinas'));
 
 // starting the server
 app.listen(app.get('port'), () => {
